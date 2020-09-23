@@ -17,3 +17,6 @@ commands:
    gmsp:
    gamemode3:
    heal:
+   setspawn:
+   spawn:
+   invsee:

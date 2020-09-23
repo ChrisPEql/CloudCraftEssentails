@@ -25,6 +25,9 @@ public class Main extends JavaPlugin {
         getCommand("gmsp").setExecutor(new gamemode3());
         getCommand("gamemode3").setExecutor(new gamemode3());
         getCommand("heal").setExecutor(new heal());
+        getCommand("setspawn").setExecutor(new setspawn());
+        getCommand("spawn").setExecutor(new spawn());
+        getCommand("invsee").setExecutor(new invsee());
 
 
 

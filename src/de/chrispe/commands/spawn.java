@@ -28,7 +28,7 @@ public class spawn implements CommandExecutor {
                 float pitch = (float) config.getDouble("Spawn.Pitch");
                 Location location  = new Location(world, x, y, z, yaw, pitch);
                 player.playSound(player.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 3F, 1F);
-                player.sendTitle("§9§lDu hast dich zum Spawn teleportiert!", null);
+                player.sendTitle("", "§9§lWillkommen am Spawn!");
                 player.teleport(location);
 
             }else
