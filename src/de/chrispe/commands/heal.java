@@ -24,14 +24,15 @@ public class heal implements CommandExecutor {
                             player.sendMessage("§b§l[CloudCraft] §9§lDu hast das §c§lLeben und das §6§lHungerlevel von §e§l" + target.getName() + " §9§laufgefüllt!");
 
                         }else
-                            player.sendMessage("§b§l[CloudCraft] §e§l" + target.getName() + " §9§list nicht auf dem Server!");
+                            player.sendMessage("§b§l[CloudCraft] §6§l" + target.getName() + " §9§list nicht auf dem Server!");
                     }else
-                        player.sendMessage("§bl[CloudCraft] bitte benutze §e§l/heal [Spieler] §9§loder wenn du nur dich heilen willst dann benutze §e§l/heal §9§l!");
+                        player.sendMessage("§bl[CloudCraft] bitte benutze §6§l/heal [Spieler] §9§loder wenn du nur dich heilen willst dann benutze §6§l/heal §9§l!");
 
-                }
+                }else
+                    player.sendMessage("§b§l[CloudCraf] §9§lBitte benutze §6§l/heal");
 
             }else
-                player.sendMessage("§b§lCloudCraft] §9§lDu hast keine Rechte für §e§l/heal §9§l!");
+                player.sendMessage("§b§lCloudCraft] §9§lDu hast §c§lkeine Rechte §9§lfür §e§l/heal §9§l!");
 
         return false;
     }

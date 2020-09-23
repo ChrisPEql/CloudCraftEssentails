@@ -4,6 +4,9 @@ main: de.chrispe.main.Main
 author: ChrisPE
 
 commands:
+   gm0:
+   gms:
+   gamemode0:
    gm1:
    gmc:
    gamemode1:

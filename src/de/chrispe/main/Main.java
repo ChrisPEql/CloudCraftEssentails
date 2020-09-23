@@ -1,9 +1,6 @@
 package de.chrispe.main;
 
-import de.chrispe.commands.gamemode1;
-import de.chrispe.commands.gamemode2;
-import de.chrispe.commands.gamemode3;
-import de.chrispe.commands.heal;
+import de.chrispe.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -15,6 +12,9 @@ public class Main extends JavaPlugin {
         System.out.println("CCEssentails wurde aktiviert!");
         plugin = this;
 
+        getCommand("gm0").setExecutor(new gamemode0());
+        getCommand("gms").setExecutor(new gamemode0());
+        getCommand("gamemode0").setExecutor(new gamemode0());
         getCommand("gm1").setExecutor(new gamemode1());
         getCommand("gmc").setExecutor(new gamemode1());
         getCommand("gamemode1").setExecutor(new gamemode1());
