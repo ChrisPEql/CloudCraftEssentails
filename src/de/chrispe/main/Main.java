@@ -29,6 +29,7 @@ public class Main extends JavaPlugin {
         getCommand("spawn").setExecutor(new spawn());
         getCommand("invsee").setExecutor(new invsee());
         getCommand("ec").setExecutor(new enderchest());
+        getCommand("tp").setExecutor(new tp());
 
 
 

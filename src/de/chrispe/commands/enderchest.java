@@ -16,10 +16,14 @@ public class enderchest implements CommandExecutor {
             if(args.length == 1){
                 Player target = Bukkit.getPlayer(args[0]);
                 if(target != null){
-                    player.openInventory(player.getEnderChest());
-                    player.sendMessage("§b§l[CloudCraft] §9§lDu hast deine Enderchest geöffnet!");
-                player.openInventory(target.getEnderChest());
-                player.sendMessage("§b§l[CloudCraft] §9§lDu hast die Enderchest von §e§l" + args[0] + " §9§lgeöffnet!");
+                    if(player.hasPermission("cloudcraft.ec")){
+                        player.openInventory(player.getEnderChest());
+                        player.sendMessage("§b§l[CloudCraft] §9§lDu hast deine Enderchest geöffnet!");
+                        player.openInventory(target.getEnderChest());
+                        player.sendMessage("§b§l[CloudCraft] §9§lDu hast die Enderchest von §e§l" + args[0] + " §9§lgeöffnet!");
+
+                    }else
+                        player.sendMessage("§b§l[CloudCraft] §9§lFür diesen Befehl hast du keine Rechte!");
 
                 }else
                     player.sendMessage("§b§l[CloudCraft] §e§l" + args[0] +" §9§list nicht online!");
