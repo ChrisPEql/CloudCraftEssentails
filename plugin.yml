@@ -20,3 +20,4 @@ commands:
    setspawn:
    spawn:
    invsee:
+   ec:
