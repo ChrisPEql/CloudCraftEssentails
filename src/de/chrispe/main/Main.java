@@ -3,6 +3,7 @@ package de.chrispe.main;
 import de.chrispe.commands.gamemode1;
 import de.chrispe.commands.gamemode2;
 import de.chrispe.commands.gamemode3;
+import de.chrispe.commands.heal;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -23,6 +24,7 @@ public class Main extends JavaPlugin {
         getCommand("gm3").setExecutor(new gamemode3());
         getCommand("gmsp").setExecutor(new gamemode3());
         getCommand("gamemode3").setExecutor(new gamemode3());
+        getCommand("heal").setExecutor(new heal());
 
 
 

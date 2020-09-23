@@ -4,7 +4,13 @@ main: de.chrispe.main.Main
 author: ChrisPE
 
 commands:
-  gm0:
-  gm1:
-  gm2:
-  gm3:
+   gm1:
+   gmc:
+   gamemode1:
+   gm2:
+   gma:
+   gamemode2:
+   gm3:
+   gmsp:
+   gamemode3:
+   heal:
