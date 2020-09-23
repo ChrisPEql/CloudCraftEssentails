@@ -41,4 +41,8 @@ public class Main extends JavaPlugin {
         plugin = this;
 
     }
+
+    public static Main getPlugin() {
+        return plugin;
+    }
 }
