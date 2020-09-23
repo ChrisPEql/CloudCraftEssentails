@@ -1,0 +1,10 @@
+name: CCEssentails
+version: 1.0
+main: de.chrispe.main.Main
+author: ChrisPE
+
+commands:
+  gm0:
+  gm1:
+  gm2:
+  gm3:

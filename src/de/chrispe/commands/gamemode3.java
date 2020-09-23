@@ -14,7 +14,7 @@ public class gamemode3 implements CommandExecutor {
         if(player.hasPermission("cloudcraft.gm3")){
             if(args.length == 0){
                 player.setGameMode(GameMode.SPECTATOR);
-                player.sendMessage("§b§l[CloudCRaft] §9§lDu bist nun im Gamemode 3!");
+                player.sendMessage("§b§l[CloudCRaft] §9§lDu bist nun im §e§lZuschauermodus§9§l!");
                 if(args.length == 1){
                    Player target = Bukkit.getPlayer(args[0]);
                    if(target != null){
